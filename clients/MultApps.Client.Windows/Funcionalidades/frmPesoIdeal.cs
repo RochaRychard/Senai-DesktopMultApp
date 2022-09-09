@@ -16,5 +16,11 @@ namespace MultApps.Client.Windows.Funcionalidades
         {
             InitializeComponent();
         }
-    }
+
+        private void rbnMasculino_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+    }    
 }
+

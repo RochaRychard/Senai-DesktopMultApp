@@ -28,23 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtnome = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMatriculaAluno));
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.lblnome = new System.Windows.Forms.Label();
-            this.lblanoNascimento = new System.Windows.Forms.Label();
-            this.txtanoNascimento = new System.Windows.Forms.TextBox();
-            this.lblanoUltimoAniversario = new System.Windows.Forms.Label();
-            this.txtanoUltimoAniversario = new System.Windows.Forms.TextBox();
-            this.btnidentificarCategoria = new System.Windows.Forms.Button();
-            this.lblcategoria = new System.Windows.Forms.Label();
-            this.lblrespostaCategoria = new System.Windows.Forms.Label();
+            this.lblDataNascimento = new System.Windows.Forms.Label();
+            this.lblHoje = new System.Windows.Forms.Label();
+            this.btnIdentificarCategoria = new System.Windows.Forms.Button();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.dtpDataDeNascimento = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // txtnome
+            // txtNome
             // 
-            this.txtnome.Location = new System.Drawing.Point(61, 21);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(338, 23);
-            this.txtnome.TabIndex = 1;
+            this.txtNome.Location = new System.Drawing.Point(61, 21);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(338, 23);
+            this.txtNome.TabIndex = 1;
             // 
             // lblnome
             // 
@@ -55,83 +54,69 @@
             this.lblnome.TabIndex = 2;
             this.lblnome.Text = "Nome:";
             // 
-            // lblanoNascimento
+            // lblDataNascimento
             // 
-            this.lblanoNascimento.AutoSize = true;
-            this.lblanoNascimento.Location = new System.Drawing.Point(12, 78);
-            this.lblanoNascimento.Name = "lblanoNascimento";
-            this.lblanoNascimento.Size = new System.Drawing.Size(99, 15);
-            this.lblanoNascimento.TabIndex = 3;
-            this.lblanoNascimento.Text = "Ano Nascimento:";
+            this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.Location = new System.Drawing.Point(12, 78);
+            this.lblDataNascimento.Name = "lblDataNascimento";
+            this.lblDataNascimento.Size = new System.Drawing.Size(117, 15);
+            this.lblDataNascimento.TabIndex = 3;
+            this.lblDataNascimento.Text = "Data de Nascimento:";
             // 
-            // txtanoNascimento
+            // lblHoje
             // 
-            this.txtanoNascimento.Location = new System.Drawing.Point(117, 75);
-            this.txtanoNascimento.Name = "txtanoNascimento";
-            this.txtanoNascimento.Size = new System.Drawing.Size(65, 23);
-            this.txtanoNascimento.TabIndex = 4;
+            this.lblHoje.AutoSize = true;
+            this.lblHoje.Location = new System.Drawing.Point(283, 78);
+            this.lblHoje.Name = "lblHoje";
+            this.lblHoje.Size = new System.Drawing.Size(41, 15);
+            this.lblHoje.TabIndex = 5;
+            this.lblHoje.Text = "Hoje é";
             // 
-            // lblanoUltimoAniversario
+            // btnIdentificarCategoria
             // 
-            this.lblanoUltimoAniversario.AutoSize = true;
-            this.lblanoUltimoAniversario.Location = new System.Drawing.Point(199, 78);
-            this.lblanoUltimoAniversario.Name = "lblanoUltimoAniversario";
-            this.lblanoUltimoAniversario.Size = new System.Drawing.Size(130, 15);
-            this.lblanoUltimoAniversario.TabIndex = 5;
-            this.lblanoUltimoAniversario.Text = "Ano último aniversário:";
+            this.btnIdentificarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIdentificarCategoria.Location = new System.Drawing.Point(14, 136);
+            this.btnIdentificarCategoria.Name = "btnIdentificarCategoria";
+            this.btnIdentificarCategoria.Size = new System.Drawing.Size(131, 36);
+            this.btnIdentificarCategoria.TabIndex = 7;
+            this.btnIdentificarCategoria.Text = "Identificar Categoria";
+            this.btnIdentificarCategoria.UseVisualStyleBackColor = true;
+            this.btnIdentificarCategoria.Click += new System.EventHandler(this.btnIdentificarCategoria_Click);
             // 
-            // txtanoUltimoAniversario
+            // lblCategoria
             // 
-            this.txtanoUltimoAniversario.Location = new System.Drawing.Point(335, 75);
-            this.txtanoUltimoAniversario.Name = "txtanoUltimoAniversario";
-            this.txtanoUltimoAniversario.Size = new System.Drawing.Size(64, 23);
-            this.txtanoUltimoAniversario.TabIndex = 6;
+            this.lblCategoria.BackColor = System.Drawing.Color.Yellow;
+            this.lblCategoria.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCategoria.Location = new System.Drawing.Point(241, 141);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(158, 27);
+            this.lblCategoria.TabIndex = 9;
+            this.lblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnidentificarCategoria
+            // dtpDataDeNascimento
             // 
-            this.btnidentificarCategoria.Location = new System.Drawing.Point(14, 136);
-            this.btnidentificarCategoria.Name = "btnidentificarCategoria";
-            this.btnidentificarCategoria.Size = new System.Drawing.Size(131, 36);
-            this.btnidentificarCategoria.TabIndex = 7;
-            this.btnidentificarCategoria.Text = "Identificar Categotia";
-            this.btnidentificarCategoria.UseVisualStyleBackColor = true;
-            // 
-            // lblcategoria
-            // 
-            this.lblcategoria.AutoSize = true;
-            this.lblcategoria.Location = new System.Drawing.Point(176, 147);
-            this.lblcategoria.Name = "lblcategoria";
-            this.lblcategoria.Size = new System.Drawing.Size(61, 15);
-            this.lblcategoria.TabIndex = 8;
-            this.lblcategoria.Text = "Categoria:";
-            // 
-            // lblrespostaCategoria
-            // 
-            this.lblrespostaCategoria.AutoSize = true;
-            this.lblrespostaCategoria.BackColor = System.Drawing.Color.Yellow;
-            this.lblrespostaCategoria.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblrespostaCategoria.Location = new System.Drawing.Point(243, 147);
-            this.lblrespostaCategoria.Name = "lblrespostaCategoria";
-            this.lblrespostaCategoria.Size = new System.Drawing.Size(2, 17);
-            this.lblrespostaCategoria.TabIndex = 9;
-            this.lblrespostaCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dtpDataDeNascimento.Location = new System.Drawing.Point(135, 72);
+            this.dtpDataDeNascimento.Name = "dtpDataDeNascimento";
+            this.dtpDataDeNascimento.Size = new System.Drawing.Size(126, 23);
+            this.dtpDataDeNascimento.TabIndex = 10;
             // 
             // frmMatriculaAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 187);
-            this.Controls.Add(this.lblrespostaCategoria);
-            this.Controls.Add(this.lblcategoria);
-            this.Controls.Add(this.btnidentificarCategoria);
-            this.Controls.Add(this.txtanoUltimoAniversario);
-            this.Controls.Add(this.lblanoUltimoAniversario);
-            this.Controls.Add(this.txtanoNascimento);
-            this.Controls.Add(this.lblanoNascimento);
+            this.Controls.Add(this.dtpDataDeNascimento);
+            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.btnIdentificarCategoria);
+            this.Controls.Add(this.lblHoje);
+            this.Controls.Add(this.lblDataNascimento);
             this.Controls.Add(this.lblnome);
-            this.Controls.Add(this.txtnome);
+            this.Controls.Add(this.txtNome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMatriculaAluno";
             this.Text = "frmMatriculaAluno";
+            this.Click += new System.EventHandler(this.frmMatriculaAluno_Click);
+            this.Validating += new System.ComponentModel.CancelEventHandler(this.frmMatriculaAluno_Validating);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,14 +124,12 @@
 
         #endregion
 
-        private TextBox txtnome;
+        private TextBox txtNome;
         private Label lblnome;
-        private Label lblanoNascimento;
-        private TextBox txtanoNascimento;
-        private Label lblanoUltimoAniversario;
-        private TextBox txtanoUltimoAniversario;
-        private Button btnidentificarCategoria;
-        private Label lblcategoria;
-        private Label lblrespostaCategoria;
+        private Label lblDataNascimento;
+        private Label lblHoje;
+        private Button btnIdentificarCategoria;
+        private Label lblCategoria;
+        private DateTimePicker dtpDataDeNascimento;
     }
 }
